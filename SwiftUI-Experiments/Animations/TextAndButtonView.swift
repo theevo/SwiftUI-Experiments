@@ -12,11 +12,16 @@ struct TextAndButtonView: View {
     @State private var fontSize = 18.0
     
     var body: some View {
-        Text("Hello there!")
-            .font(.system(size: fontSize))
-            .opacity(isVisible ? 1.0 : 0)
-            .animation(.easeOut(duration: 0.4), value: isVisible)
-            .animation(.spring, value: isVisible)
+        ZStack {
+            Text("Hello there!")
+                .font(.system(size: fontSize))
+                .opacity(isVisible ? 1.0 : 0)
+                .animation(.easeOut(duration: 0.4), value: isVisible)
+                .animation(.spring, value: isVisible)
+            Text("Hello there!") // not visible
+                .font(.system(size: 50.0))
+                .opacity(0.0)
+        }
         Button(action: {
             isVisible.toggle()
             fontSize = isVisible ? 50.0 : 18.0
