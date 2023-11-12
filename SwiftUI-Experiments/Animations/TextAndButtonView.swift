@@ -30,7 +30,7 @@ struct GrowingButton: ButtonStyle {
             .background(Color.accentColor)
             .foregroundStyle(.white)
             .clipShape(Capsule())
-            .scaleEffect(configuration.isPressed ? 1.2 : 1)
+            .scaleEffect(configuration.isPressed ? 0.8 : 1)
             .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
     }
 }
