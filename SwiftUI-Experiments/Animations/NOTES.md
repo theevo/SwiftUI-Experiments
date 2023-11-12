@@ -9,6 +9,30 @@ Other animations with different behavior as follows,
 * easeIn: The animation sequence starts out slow and speeds up as the end approaches.
 * easeInOut: The animation starts slow, speeds up, and then slows down again.
 
+## Hack: use ZStack to hold space
+
+```swift
+struct StackingPlaceholder: View {
+    var body: some View {
+        Text("Stacking with a Placeholder")
+        HStack {
+            TrainCar(.rear)
+            ZStack {
+                TrainCar(.middle) // in the back, not visisble
+                    .font(.largeTitle)
+                    .opacity(0) // only makes text invisible
+                    .background(Color("customBlue")) // this blue background IS visible
+                TrainCar(.middle) // in the front, is visible
+            }
+            TrainCar(.front)            
+        }
+        TrainTrack()
+    }
+}
+```
+
+
+
 ## Links
 
 [Animating views and transitions — SwiftUI Tutorials | Apple Developer Documentation](https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions)
@@ -23,3 +47,5 @@ Other animations with different behavior as follows,
 
 [Basics of SwiftUI Animations | by Ami Solani | Simform Engineering | Medium]
 (https://medium.com/simform-engineering/basics-of-swift-ui-animations-d1aa2485a5d9#:~:text=easeOut%3A%20The%20animation%20starts%20out,and%20then%20slows%20down%20again.)
+
+[Adjusting the space between views — SwiftUI Concepts Tutorials | Apple Developer Documentation](https://developer.apple.com/tutorials/swiftui-concepts/adjusting-the-space-between-views)
