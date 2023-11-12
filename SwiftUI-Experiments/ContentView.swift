@@ -15,6 +15,17 @@ struct ContentView: View {
         }, label: {
             Text("Button")
         })
+        .buttonStyle(BlueButton())
+    }
+}
+
+struct BlueButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(Color.accentColor)
+            .foregroundStyle(.white)
+            .clipShape(Capsule())
     }
 }
 
