@@ -21,6 +21,7 @@
 		AC82C7DE2B005379009C3023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC82C7E12B005379009C3023 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC82C7E92B005863009C3023 /* TextAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndButtonView.swift; sourceTree = "<group>"; };
+		AC82C7EB2B00591F009C3023 /* NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NOTES.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				AC82C7E92B005863009C3023 /* TextAndButtonView.swift */,
+				AC82C7EB2B00591F009C3023 /* NOTES.md */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
