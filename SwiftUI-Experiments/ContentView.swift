@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isVisible = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello there!")
+            .opacity(isVisible ? 1.0 : 0)
+            .animation(.easeOut(duration: 0.4), value: isVisible)
         Button(action: {
-            print("button pressed")
+            isVisible.toggle()
         }, label: {
             Text("Button")
         })
