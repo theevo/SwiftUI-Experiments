@@ -9,13 +9,17 @@ import SwiftUI
 
 struct TextAndButtonView: View {
     @State private var isVisible = false
+    @State private var fontSize = 18.0
     
     var body: some View {
         Text("Hello there!")
+            .font(.system(size: fontSize))
             .opacity(isVisible ? 1.0 : 0)
             .animation(.easeOut(duration: 0.4), value: isVisible)
+            .animation(.spring, value: isVisible)
         Button(action: {
             isVisible.toggle()
+            fontSize = isVisible ? 50.0 : 18.0
         }, label: {
             Text("Button")
         })
