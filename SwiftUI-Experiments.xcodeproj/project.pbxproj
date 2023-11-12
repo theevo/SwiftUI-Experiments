@@ -11,6 +11,7 @@
 		AC82C7DD2B005378009C3023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82C7DC2B005378009C3023 /* ContentView.swift */; };
 		AC82C7DF2B005379009C3023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC82C7DE2B005379009C3023 /* Assets.xcassets */; };
 		AC82C7E22B005379009C3023 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC82C7E12B005379009C3023 /* Preview Assets.xcassets */; };
+		AC82C7EA2B005863009C3023 /* TextAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82C7E92B005863009C3023 /* TextAndButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AC82C7DC2B005378009C3023 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC82C7DE2B005379009C3023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC82C7E12B005379009C3023 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC82C7E92B005863009C3023 /* TextAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AC82C7DA2B005378009C3023 /* SwiftUI_ExperimentsApp.swift */,
 				AC82C7DC2B005378009C3023 /* ContentView.swift */,
+				AC82C7E82B00582F009C3023 /* Animations */,
 				AC82C7DE2B005379009C3023 /* Assets.xcassets */,
 				AC82C7E02B005379009C3023 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				AC82C7E12B005379009C3023 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC82C7E82B00582F009C3023 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				AC82C7E92B005863009C3023 /* TextAndButtonView.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC82C7DD2B005378009C3023 /* ContentView.swift in Sources */,
+				AC82C7EA2B005863009C3023 /* TextAndButtonView.swift in Sources */,
 				AC82C7DB2B005378009C3023 /* SwiftUI_ExperimentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
