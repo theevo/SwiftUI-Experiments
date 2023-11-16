@@ -49,3 +49,8 @@ struct StackingPlaceholder: View {
 (https://medium.com/simform-engineering/basics-of-swift-ui-animations-d1aa2485a5d9#:~:text=easeOut%3A%20The%20animation%20starts%20out,and%20then%20slows%20down%20again.)
 
 [Adjusting the space between views — SwiftUI Concepts Tutorials | Apple Developer Documentation](https://developer.apple.com/tutorials/swiftui-concepts/adjusting-the-space-between-views)
+
+[How to start an animation immediately after a view appears - a free SwiftUI by Example tutorial](https://www.hackingwithswift.com/quick-start/swiftui/how-to-start-an-animation-immediately-after-a-view-appears)
+
+[How to delay an animation - a free SwiftUI by Example tutorial](https://www.hackingwithswift.com/quick-start/swiftui/how-to-delay-an-animation#:~:text=When%20you%20create%20any%20animation,use%20the%20delay()%20modifier.)
+

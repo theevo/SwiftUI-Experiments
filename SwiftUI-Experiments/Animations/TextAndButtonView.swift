@@ -19,8 +19,14 @@ struct TextAndButtonView: View {
             Text("Hello there!")
                 .font(.system(size: fontSize))
                 .opacity(isVisible ? 1.0 : 0)
-                .animation(.easeOut(duration: 0.4), value: isVisible)
-                .animation(.spring, value: isVisible)
+                .animation(.easeOut(duration: 0.4).delay(3.0), value: isVisible)
+                .animation(.spring.delay(3.0), value: isVisible)
+                .onAppear(perform: {
+                    withAnimation {
+                        isVisible = true
+                        fontSize = 50.0
+                    }
+                })
         }
         Button(action: {
             isVisible.toggle()
